@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Vanh</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111; /* nền đen */
+      color: #eee;      /* chữ xám sáng */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      background: #1a1a1a; /* xám đậm */
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      overflow: hidden;
+      max-width: 1100px;
+      width: 95%;
+    }
+
+    .section {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Ảnh profile */
+    .profile img.main {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #444;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    /* Tên & biệt danh */
+    .profile h2 {
+      margin: 15px 0 5px 0;
+      font-size: 26px;
+    }
+
+    .profile h3 {
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      color: #aaa;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    /* Bộ sưu tập ảnh nhỏ */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #333;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      border-color: #666;
+    }
+
+    /* Link mạng xã hội */
+    .links a {
+      display: block;
+      margin: 15px auto;
+      padding: 12px;
+      width: 70%;
+      background: #333;
+      color: #eee;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #555;
+    }
+
+    /* Mô tả & danh sách */
+    .about {
+      text-align: left;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .about ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .about ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Responsive cho mobile */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .profile img.main {
+        width: 150px;
+        height: 150px;
+      }
+      .links a {
+        width: 90%;
+      }
+      .about {
+        text-align: center;
+      }
+      .about ul {
+        padding-left: 0;
+        list-style: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Phần ảnh -->
+    <div class="section profile">
+      <img class="main" src="D:\NFC\NFC_v3\assets\avatar.png" alt="Profile Picture">
+      <h2>Nguyễn Thị Vân Anh</h2>
+      <h3>"Vanh-ngcat"</h3>
+
+      <!-- Bộ sưu tập ảnh -->
+      <div class="gallery">
+        <img src="https://via.placeholder.com/70" alt="Gallery 1">
+        <img src="https://via.placeholder.com/70" alt="Gallery 2">
+        <img src="https://via.placeholder.com/70" alt="Gallery 3">
+        <img src="https://via.placeholder.com/70" alt="Gallery 4">
+      </div>
+    </div>
+
+    <!-- Phần link -->
+    <div class="section links">
+      <h2>Kết nối</h2>
+      <a href="https://www.facebook.com/vanhngcat" target="_blank">Facebook</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/" target="_blank">TikTok</a>
+    </div>
+
+    <!-- Phần mô tả -->
+    <div class="section about">
+      <h2>About meee</h2>
+      <p>
+        Tôi là một người yêu thích công nghệ, thích tìm tòi về điện tử và lập trình. 
+        Ngoài ra tôi cũng đam mê âm nhạc gothic, thích phong cách tối giản, 
+        và dành nhiều thời gian cho việc sáng tạo cá nhân.
+      </p>
+
+      <h3>More about me</h3>
+      <ul>
+        <li><strong>Âm nhạc:</strong> Pop, Rock, Lo-fi</li>
+        <li><strong>Nghề nghiệp:</strong> Luật sư, Freelancer</li>
+        <li><strong>Sở thích:</strong> Crafting, nhiếp ảnh, du lịch</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
